@@ -1,15 +1,22 @@
 .gallery{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px 10px;
- margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0;
 
 }
 
-.gallery-item {
-  width: 500px;
+
+.gallery-item:hover{
+transform: perspective(600px) rotateX(10deg) rotateY(10deg);
+transition: all 500ms ease;
+
 }
 
 .gallery-image{
-  border-radius: 30px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
