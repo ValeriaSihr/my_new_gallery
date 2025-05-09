@@ -1,7 +1,50 @@
-.timer {}
+.timer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px;
+  padding: 20px;
+}
 
-.field {}
+.timer-section button{
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
 
-.value {}
+  color: tomato;
+}
 
-.label {}
+input#datetime-picker.flatpickr-input{
+  width: 500px;
+  height: 50px;
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+
+.timer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+ font-size: 35px;
+
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.value {
+  font-weight: bold;
+
+
+}
